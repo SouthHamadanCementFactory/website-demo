@@ -25,7 +25,8 @@
 
   /* Gradients */
   --grad-accent:linear-gradient(135deg, var(--accent), #e6c766);
-  --grad-cta:linear-gradient(135deg, #0d4b66, #4d8baa);
+  --grad-cta: linear-gradient(135deg, #0ea5e9, #10b981);
+
   --grad-hero:linear-gradient(90deg, rgba(15,23,42,.8), transparent 60%);
 
   /* Effects */
