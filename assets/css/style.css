@@ -1807,6 +1807,7 @@ footer .brand img{height:38px}
 
 
 
+
 /* ===== Features Premium ===== */
 .features-premium{ gap: var(--gap) }
 
@@ -1862,4 +1863,22 @@ footer .brand img{height:38px}
   .f-card{ background: rgba(17,24,39,.92); border-color:#1f2937; box-shadow: 0 10px 28px rgba(0,0,0,.25) }
   .f-text{ color:#e5e7eb }
   .f-accent{ background: linear-gradient(90deg, transparent, #22d3ee, transparent) }
+}
+
+
+
+
+
+
+
+
+
+
+/* ===== خلفية ملونة منسابة للموقع ===== */
+body {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2ebf0 100%), 
+              radial-gradient(circle at top left, rgba(14,165,233,0.18), transparent 60%),
+              radial-gradient(circle at bottom right, rgba(212,175,55,0.18), transparent 60%);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
 }
