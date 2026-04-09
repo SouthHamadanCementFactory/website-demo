@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حذف الحساب والبيانات | المحاسب ألترا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">أ</div>
+        <div>
+          <strong data-i18n="appName">المحاسب ألترا</strong>
+          <span data-i18n="legalCenter">مركز الخصوصية والسياسات</span>
+        </div>
+      </a>
+      <button id="langToggle" class="lang-btn" type="button">EN</button>
+    </div>
+  </header>
+
+  <main class="container doc-page">
+    <article class="doc-card">
+      <div class="doc-header">
+        <span class="badge">حذف الحساب والبيانات</span>
+        <h1>طلب حذف الحساب والبيانات في تطبيق المحاسب ألترا</h1>
+        <p class="meta">إذا كنت ترغب في حذف حسابك والبيانات المرتبطة به، يمكنك تقديم طلب عبر النموذج التالي أو عبر البريد الإلكتروني الموضح أدناه.</p>
+      </div>
+
+      <section><h2>كيف يتم الحذف؟</h2>
+      <ul>
+        <li>قد نطلب التحقق من ملكية الحساب قبل تنفيذ الطلب لحماية بيانات المستخدم.</li>
+        <li>عند الموافقة على الطلب، سيتم حذف الحساب والبيانات المرتبطة به أو جعلها غير قابلة للربط بصاحبها بحسب طبيعة الخدمة والالتزامات القانونية.</li>
+        <li>قد نحتفظ ببعض السجلات المحدودة إذا كان ذلك مطلوبًا لأسباب قانونية أو محاسبية أو لمنع الاحتيال وإساءة الاستخدام.</li>
+        <li>يتم التعامل مع الطلبات خلال مدة معقولة بعد استلامها والتحقق منها.</li>
+      </ul></section>
+
+      <section>
+        <h2>نموذج طلب الحذف</h2>
+        <form class="delete-form" id="deleteForm">
+          <div class="form-grid">
+            <label><span>الاسم الكامل</span><input type="text" id="fullName" required /></label>
+            <label><span>البريد الإلكتروني المرتبط بالحساب</span><input type="email" id="accountEmail" required /></label>
+            <label><span>رقم الهاتف (اختياري)</span><input type="text" id="phone" /></label>
+            <label><span>نوع الطلب</span>
+              <select id="requestType" required>
+                <option value="delete_account">حذف الحساب والبيانات المرتبطة به</option>
+                <option value="delete_data">حذف بيانات محددة فقط</option>
+              </select>
+            </label>
+          </div>
+
+          <label><span>تفاصيل إضافية</span><textarea id="details" rows="6" placeholder="اكتب أي تفاصيل تساعدنا على معالجة طلبك"></textarea></label>
+
+          <div class="form-actions">
+            <button class="primary-btn" type="submit">إرسال الطلب</button>
+            <a class="secondary-btn" id="mailDeleteRequest" href="mailto:hani20047@gmail.com?subject=Delete%20Account%20Request">الإرسال عبر البريد</a>
+          </div>
+
+          <p class="helper-text">هذا النموذج يفتح برنامج البريد على جهازك لإرسال الطلب إلى فريق الدعم. ويمكن ربطه لاحقًا بنموذج خارجي أو خدمة دعم فني أو واجهة خلفية.</p>
+        </form>
+      </section>
+
+      <section><h2>التواصل</h2><p>لأي استفسار متعلق بالخصوصية أو البيانات، يرجى التواصل عبر البريد <a id="contactEmailLinkDelete" href="mailto:hani20047@gmail.com">hani20047@gmail.com</a> أو رقم الهاتف 777704977.</p></section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> <span data-i18n="appName">المحاسب ألترا</span></span>
+      <span data-i18n="footerText">جميع الحقوق محفوظة</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
